@@ -41,7 +41,7 @@ pass:password
 
 ## Commands
 
-If you have connect the physical buttons, you can change color, brightness and time zone in a click (cycling).
+If you have connected the physical buttons, you can change color, brightness and time zone in a click (cycling).
 Or you can connect via serial console (also via web installer) and type:
 ```
 ccolor
@@ -50,7 +50,7 @@ to change the colors
 ```
 cbrig
 ```
-to change the Brightness   
+to change the brightness   
 ```
 tzplus
 ```
