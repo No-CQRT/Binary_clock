@@ -1,20 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Binary Clock Firmware Installer</title>
-  <script type="module" src="https://unpkg.com/esp-web-tools@8.0.2/dist/web/install-button.js?module"></script>
+  <script type="module" src="https://esm.run/esp-web-tools@8.0.2/dist/web/install-button.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 2em;
+    }
+    p {
+      max-width: 600px;
+      margin: 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    esp-web-install-button {
+      margin: 30px 0;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Binary Clock Firmware Installer</h1>
-  <h2>
-  <p>Questa pagina consente di installare il firmware <strong>binary_clock</strong> su ESP8266. Collega il dispositivo e premi "Connect" per iniziare.</p>
-  <p>Use this page to install  <strong>binary_clock</strong> firmware on ESP8266. Attach your device and press "Connect" to start.</p>
-    </h2>
+  <p>Questa pagina ti consente di installare il firmware <strong>binary_clock</strong> sul tuo ESP8266. Premi "Connect" per iniziare. Use this page to install the firmware, attach your device and press "Connect".</p>
   <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-
   <footer>
-    <p>Powered by <a href="https://github.com/esphome/esp-web-tools" target="_blank">ESP Web Tools</a></p>
+    Powered by <a href="https://github.com/esphome/esp-web-tools" target="_blank" style="color:#bbb;">ESP Web Tools</a>
   </footer>
 </body>
 </html>
